@@ -1,0 +1,19 @@
+{
+  "name": "pinterest-downloader",
+  "version": "1.0.0",
+  "description": "Simple Pinterest pin downloader",
+  "main": "app.js",
+  "author": "1void",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
