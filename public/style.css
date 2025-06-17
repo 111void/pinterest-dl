@@ -25,18 +25,19 @@ body{
 }
 
 .container{
-    max-width: 80%;
+    max-width: 400px;
     min-height: 90vh;
     width: 100%;
     margin: 0 auto;
     display: grid;
     place-content: center;
+    padding: 1rem;
 }
 
 .card{
-    margin-top: 2rem;
+    margin-top: 1rem;
     background-color: var(--color-card-bg);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 16px;
     border: 1px solid var(--color-border);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -46,7 +47,8 @@ body{
     color: var(--color-text);
     font-weight: 500;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 .card h2 b{
     color: var(--color-primary);
@@ -55,7 +57,7 @@ body{
 form{
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 8px;
 }
 
 form input{
@@ -65,14 +67,14 @@ form input{
 
 form input:nth-child(1){
     flex: 1;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 12px;
     border: 2px solid var(--color-border);
     background-color: var(--color-input-bg);
     color: var(--color-text);
     font-weight: 400;
     transition: .3s ease-in-out;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 form input:nth-child(1):focus, form input:nth-child(1):hover{
@@ -91,10 +93,10 @@ form input:nth-child(1)::placeholder{
     font-weight: 600;
     color: var(--white);
     cursor: pointer;
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.2rem;
     transition: .3s ease-in-out;
-    font-size: 14px;
-    min-width: 120px;
+    font-size: 13px;
+    min-width: 100px;
 }
 
 .btn-submit:hover{
@@ -103,8 +105,8 @@ form input:nth-child(1)::placeholder{
 }
 
 .btn{
-    margin-bottom: 1rem;
-    padding: 0.8rem 1rem;
+    margin-bottom: 0.8rem;
+    padding: 0.6rem 0.8rem;
     background-color: var(--color-primary);
     color: var(--white);
     border-radius: 12px;
@@ -115,7 +117,8 @@ form input:nth-child(1)::placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
+    font-size: 13px;
 }
 
 .btn:hover{
@@ -130,25 +133,26 @@ form input:nth-child(1)::placeholder{
 }
 
 .content{
-    min-width: 300px;
+    min-width: 100%;
     border-radius: 12px;
-    margin-top: 2rem;
-    min-height: 300px;
+    margin-top: 1.5rem;
+    min-height: 200px;
     background-color: var(--white);
     border: 1px solid var(--color-border);
     display: grid;
     place-content: center;
-    padding: 2rem;
+    padding: 1.5rem;
     color: var(--color-text);
 }
 
 .content ol{
     color: var(--color-text-secondary);
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 13px;
 }
 
 .content ol li{
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .content ol b{
@@ -157,8 +161,8 @@ form input:nth-child(1)::placeholder{
 
 .content img{
     justify-self: center;
-    max-width: 300px;
-    max-height: 400px;
+    max-width: 200px;
+    max-height: 250px;
     border-radius: 12px;
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -166,63 +170,64 @@ form input:nth-child(1)::placeholder{
 
 .content video{
     justify-self: center;
-    width: 300px;
+    width: 200px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .media-info{
     color: var(--color-text);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
 .media-info h3{
     color: var(--color-text);
     margin-bottom: 0.5rem;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .media-info p{
     color: var(--color-text-secondary);
     margin: 0.25rem 0;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .download-section{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .download-options{
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.6rem;
 }
 
 .download-options .btn{
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 14px;
+    padding: 0.8rem;
+    margin-bottom: 0.4rem;
+    font-size: 12px;
 }
 
 .loading{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     color: var(--color-text);
 }
 
 .loading p{
     color: var(--color-text-secondary);
+    font-size: 13px;
 }
 
 .spinner{
-    border: 4px solid var(--color-border);
-    border-top: 4px solid var(--color-primary);
+    border: 3px solid var(--color-border);
+    border-top: 3px solid var(--color-primary);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     animation: spin 1s linear infinite;
 }
 
@@ -231,20 +236,21 @@ form input:nth-child(1)::placeholder{
     100% { transform: rotate(360deg); }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 480px) {
+    .container{
+        max-width: 450px;
+    }
+    
     .content{
-        width: 450px;
+        width: 100%;
     }
-    .content ol{
-        font-size: 14px;
-    }
-
+    
     .content img{
-        max-width: 350px;
+        max-width: 250px;
     }
 
     .content video{
-        width: 300px;
+        width: 250px;
     }
     
     .download-options{
@@ -254,12 +260,12 @@ form input:nth-child(1)::placeholder{
     
     .download-options .btn{
         flex: 1;
-        min-width: 140px;
+        min-width: 120px;
     }
 }
 
 footer{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -269,7 +275,7 @@ footer{
 footer h3{
     color: var(--color-text-secondary);
     font-weight: 300;
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
 }
 footer b{
@@ -279,7 +285,7 @@ footer b{
 
 footer p{
     margin: 0;
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
     color: var(--color-text-secondary);
 }
@@ -294,13 +300,14 @@ footer p{
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     background-color: #ffebee;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 8px;
     border-left: 4px solid var(--color-danger);
+    font-size: 13px;
 }
 
 .messageError i{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
