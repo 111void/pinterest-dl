@@ -41,22 +41,3 @@ GET /api/download?url=<pinterest_url>
 ## Deploy
 
 Ready to deploy to Vercel - just push to repository and connect to Vercel.
-
-## Installation
-
-```bash
-# Clone repository
-git clone https://github.com/111void/pinterest-dl.git
-cd pinterest-dl
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Or run production
-npm start
-```
-
-Visit `http://localhost:3001` to view the application.
